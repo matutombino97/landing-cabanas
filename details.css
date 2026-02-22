@@ -1,0 +1,133 @@
+/* Specific styles for detail pages */
+.detail-hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero-alpina {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('img/cabaña-1.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-suite {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('img/cabaña-dos.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-premium {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('img/cabaña-tres.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.detail-content {
+    padding: 60px 0;
+}
+
+.back-btn-container {
+    margin-bottom: 30px;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.back-btn:hover {
+    color: var(--accent);
+    transform: translateX(-5px);
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    transition: var(--transition);
+    display: block;
+}
+
+.photo-gallery img.main-img {
+    grid-column: 1 / -1;
+    height: 400px;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-md);
+}
+
+.amenities-list {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 100px;
+}
+
+.amenities-list h3 {
+    border-bottom: 2px solid var(--bg-crema);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.amenity-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: var(--text-muted);
+}
+
+.amenity-item span {
+    color: var(--accent);
+}
+
+.price-tag {
+    font-size: 2rem;
+    color: var(--primary);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    margin: 20px 0;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-gallery img.main-img {
+        height: 250px;
+    }
+}
