@@ -4,7 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refugio Cabañas | Plantilla Premium</title>
+    <title>Refugio Cabañas | Tu escape en Potrerillos, Mendoza</title>
+    <meta name="description"
+        content="Cabañas premium en Potrerillos, Mendoza. Disfruta naturaleza, confort y vistas inolvidables. Piscina climatizada, Wi-Fi, parrillas y más. ¡Reserva ahora!">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Refugio Cabañas | Potrerillos, Mendoza">
+    <meta property="og:description"
+        content="Tu escape en el corazón de la montaña. Cabañas premium con piscina, Wi-Fi y vistas panorámicas.">
+    <meta property="og:image" content="img/cabaña-1.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +22,7 @@
         rel="stylesheet">
     <!-- Material Symbols -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0" />
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/cabaña.jpeg" type="image/jpeg">
 </head>
@@ -32,6 +41,7 @@
                 <li><a href="#nosotros">Quienes Somos</a></li>
                 <li><a href="#comodidades">Comodidades</a></li>
                 <li><a href="#cabanas">Cabañas</a></li>
+                <li><a href="#actividades">Actividades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="nav-actions">
@@ -46,7 +56,7 @@
         <div class="hero-overlay"></div>
         <div class="hero-content fade-in-up">
             <span class="hero-subtitle">Desconecta de la rutina</span>
-            <h1>Tu refugio en el corazon de Potrerillos</h1>
+            <h1>Tu refugio en el corazón de Potrerillos</h1>
             <p>Descubre la paz y la tranquilidad en nuestras exclusivas cabañas rodeadas de naturaleza.</p>
             <a href="#cabanas" class="btn-outline">Explorar Cabañas</a>
         </div>
@@ -60,7 +70,8 @@
         <div class="booking-container fade-in-up">
             <form class="booking-form" id="booking-form">
                 <div class="form-group">
-                    <label for="entrada"><span class="material-symbols-outlined">calendar_today</span> Check-in</label>
+                    <label for="entrada"><span class="material-symbols-outlined">calendar_today</span>
+                        Check-in</label>
                     <input type="date" id="entrada" required>
                 </div>
                 <div class="form-group">
@@ -68,7 +79,7 @@
                     <input type="date" id="salida" required>
                 </div>
                 <div class="form-group">
-                    <label for="huespedes"><span class="material-symbols-outlined">group</span> Huespedes</label>
+                    <label for="huespedes"><span class="material-symbols-outlined">group</span> Huéspedes</label>
                     <select id="huespedes" required>
                         <option value="1">1 Persona</option>
                         <option value="2" selected>2 Personas</option>
@@ -90,10 +101,11 @@
                     <span class="section-subtitle">Nuestra Esencia</span>
                     <h2>Naturaleza, confort y vistas inolvidables</h2>
                     <p>Diseñadas para integrarse armoniosamente con el entorno, nuestras cabañas ofrecen una experiencia
-                        unida donde el lujo se encuentra con lo rustico. Cada detalle fue pensado para que tu estancia
+                        única donde el lujo se encuentra con lo rústico. Cada detalle fue pensado para que tu estancia
                         sea perfecta.</p>
                     <ul class="check-list">
-                        <li><span class="material-symbols-outlined">check_circle</span> Atencion personalizada 24/7</li>
+                        <li><span class="material-symbols-outlined">check_circle</span> Atención personalizada 24/7
+                        </li>
                         <li><span class="material-symbols-outlined">check_circle</span> Entorno seguro y privado</li>
                         <li><span class="material-symbols-outlined">check_circle</span> Sustentabilidad y cuidado del
                             medio ambiente</li>
@@ -101,7 +113,7 @@
                 </div>
                 <div class="about-image slide-in-right">
                     <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=800&auto=format&fit=crop"
-                        alt="Vista exterior de cabaña">
+                        alt="Vista exterior de cabaña" loading="lazy">
                     <div class="experience-badge">
                         <span class="years">10+</span>
                         <span class="text">Años de<br>Experiencia</span>
@@ -117,25 +129,45 @@
             <span class="section-subtitle">Servicios Premium</span>
             <h2>Todo lo que necesitas</h2>
             <div class="amenities-grid">
-                <div class="amenity-card fade-in-up" style="transition-delay: 0.1s;">
+                <div class="amenity-card fade-in-up" style="transition-delay: 0.05s;">
                     <div class="icon-wrapper"><span class="material-symbols-outlined">pool</span></div>
                     <h3>Piscina Climatizada</h3>
                     <p>Relajate todo el año con vistas a la montaña.</p>
                 </div>
-                <div class="amenity-card fade-in-up" style="transition-delay: 0.2s;">
+                <div class="amenity-card fade-in-up" style="transition-delay: 0.1s;">
                     <div class="icon-wrapper"><span class="material-symbols-outlined">wifi</span></div>
                     <h3>Wi-Fi de Alta Velocidad</h3>
-                    <p>Conexion satelital para que no te falte nada.</p>
+                    <p>Conexión satelital para que no te falte nada.</p>
                 </div>
-                <div class="amenity-card fade-in-up" style="transition-delay: 0.3s;">
+                <div class="amenity-card fade-in-up" style="transition-delay: 0.15s;">
                     <div class="icon-wrapper"><span class="material-symbols-outlined">outdoor_grill</span></div>
                     <h3>Zona de Parrillas</h3>
                     <p>Espacios privados equipados para tus asados.</p>
                 </div>
-                <div class="amenity-card fade-in-up" style="transition-delay: 0.4s;">
+                <div class="amenity-card fade-in-up" style="transition-delay: 0.2s;">
                     <div class="icon-wrapper"><span class="material-symbols-outlined">local_fire_department</span></div>
                     <h3>Hogar a Leña</h3>
-                    <p>Calefaccion premium para noches acogedoras.</p>
+                    <p>Calefacción premium para noches acogedoras.</p>
+                </div>
+                <div class="amenity-card fade-in-up" style="transition-delay: 0.25s;">
+                    <div class="icon-wrapper"><span class="material-symbols-outlined">local_parking</span></div>
+                    <h3>Estacionamiento Privado</h3>
+                    <p>Cochera techada y segura para tu vehículo.</p>
+                </div>
+                <div class="amenity-card fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="icon-wrapper"><span class="material-symbols-outlined">landscape</span></div>
+                    <h3>Vistas Panorámicas</h3>
+                    <p>Montañas y cielos estrellados desde tu ventana.</p>
+                </div>
+                <div class="amenity-card fade-in-up" style="transition-delay: 0.35s;">
+                    <div class="icon-wrapper"><span class="material-symbols-outlined">bed</span></div>
+                    <h3>Ropa de Cama Premium</h3>
+                    <p>Sábanas de algodón egipcio y edredones de pluma.</p>
+                </div>
+                <div class="amenity-card fade-in-up" style="transition-delay: 0.4s;">
+                    <div class="icon-wrapper"><span class="material-symbols-outlined">restaurant</span></div>
+                    <h3>Desayuno Regional</h3>
+                    <p>Productos artesanales de la zona cada mañana.</p>
                 </div>
             </div>
         </div>
@@ -149,34 +181,93 @@
             <div class="gallery-grid">
                 <div class="gallery-item fade-in-up">
                     <div class="image-wrapper">
-                        <img src="img/cabaña-1.jpg" alt="Cabaña Alpina"
+                        <img src="img/cabaña-1.jpg" alt="Cabaña Alpina" loading="lazy"
                             onerror="this.src='https://images.unsplash.com/photo-1449844908441-8829872d2607?w=600&q=80'">
                         <div class="overlay">
                             <h3>Cabaña Alpina</h3>
                             <span>Hasta 4 personas</span>
+                            <span class="price-preview">Desde $85.000 / noche</span>
                             <a href="cabana-alpina.html"><button class="btn-sm">Ver Detalles</button></a>
                         </div>
                     </div>
                 </div>
                 <div class="gallery-item fade-in-up" style="transition-delay: 0.2s;">
                     <div class="image-wrapper">
-                        <img src="img/cabaña-dos.jpg" alt="Cabaña Familiar" onerror="this.src='img/cabana-alpina'">
+                        <img src="img/cabaña-dos.jpg" alt="Suite Parejas" loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&q=80'">
                         <div class="overlay">
                             <h3>Suite Parejas</h3>
-                            <span>Romantica - 2 personas</span>
+                            <span>Romántica - 2 personas</span>
+                            <span class="price-preview">Desde $95.000 / noche</span>
                             <a href="suite-parejas.html"><button class="btn-sm">Ver Detalles</button></a>
                         </div>
                     </div>
                 </div>
                 <div class="gallery-item fade-in-up" style="transition-delay: 0.4s;">
                     <div class="image-wrapper">
-                        <img src="img/cabaña-tres.jpg" alt="Cabaña Premium"
+                        <img src="img/cabaña-tres.jpg" alt="Cabaña Premium" loading="lazy"
                             onerror="this.src='https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=600&q=80'">
                         <div class="overlay">
                             <h3>Cabaña Premium</h3>
-                            <span>Vistas Panoramicas - 6 personas</span>
+                            <span>Vistas Panorámicas - 6 personas</span>
+                            <span class="price-preview">Desde $120.000 / noche</span>
                             <a href="cabana-premium.html"><button class="btn-sm">Ver Detalles</button></a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="actividades" class="activities-section section-padding bg-light">
+        <div class="container text-center">
+            <span class="section-subtitle">Experiencias Únicas</span>
+            <h2>Qué hacer en Potrerillos</h2>
+            <p class="section-description">La montaña mendocina ofrece aventuras para todos los gustos, desde adrenalina
+                pura hasta relax absoluto.</p>
+            <div class="activities-grid">
+                <div class="activity-card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="activity-img">
+                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80"
+                            alt="Trekking en montaña" loading="lazy">
+                        <div class="activity-icon"><span class="material-symbols-outlined">hiking</span></div>
+                    </div>
+                    <div class="activity-info">
+                        <h3>Trekking & Senderismo</h3>
+                        <p>Senderos señalizados para todos los niveles entre cerros y arroyos cristalinos.</p>
+                    </div>
+                </div>
+                <div class="activity-card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="activity-img">
+                        <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80"
+                            alt="Cabalgatas" loading="lazy">
+                        <div class="activity-icon"><span class="material-symbols-outlined">pets</span></div>
+                    </div>
+                    <div class="activity-info">
+                        <h3>Cabalgatas</h3>
+                        <p>Recorré la cordillera a caballo con guías locales experimentados.</p>
+                    </div>
+                </div>
+                <div class="activity-card fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="activity-img">
+                        <img src="img/rafting.jpg" alt="Rafting" loading="lazy">
+                        <div class="activity-icon"><span class="material-symbols-outlined">kayaking</span></div>
+                    </div>
+                    <div class="activity-info">
+                        <h3>Rafting & Kayak</h3>
+                        <p>Adrenalina pura en las aguas del río Mendoza con equipos profesionales.</p>
+                    </div>
+                </div>
+                <div class="activity-card fade-in-up" style="transition-delay: 0.4s;">
+                    <div class="activity-img">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&q=80"
+                            alt="Observación de estrellas" loading="lazy">
+                        <div class="activity-icon"><span class="material-symbols-outlined">star</span></div>
+                    </div>
+                    <div class="activity-info">
+                        <h3>Astroturismo</h3>
+                        <p>Cielos limpios ideales para observar la Vía Láctea y constelaciones.</p>
                     </div>
                 </div>
             </div>
@@ -187,21 +278,164 @@
     <section class="testimonials-section section-padding parallax">
         <div class="parallax-overlay"></div>
         <div class="container text-center relative z-10">
-            <h2>Lo que dicen nuestros huespedes</h2>
-            <div class="testimonial-slider fade-in-up">
+            <h2>Lo que dicen nuestros huéspedes</h2>
+            <div class="testimonial-slider fade-in-up" id="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="stars">
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                    </div>
+                    <p class="quote">"Un lugar mágico. Las cabañas son hermosas, súper limpias y la atención de los
+                        dueños es inmejorable. Volveremos seguro."</p>
+                    <span class="author">— María Fernández</span>
+                </div>
                 <div class="testimonial">
                     <div class="stars">
-                        <span class="material-symbols-outlined">star</span>
-                        <span class="material-symbols-outlined">star</span>
-                        <span class="material-symbols-outlined">star</span>
-                        <span class="material-symbols-outlined">star</span>
-                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
                     </div>
-                    <p class="quote">"Un lugar magico. Las cabañas son hermosas, super limpias y la atencion de los
-                        dueños es inmejorable. Volveremos seguro."</p>
-                    <span class="author">- Maria Fernandez</span>
+                    <p class="quote">"Fuimos en invierno y fue perfecto. El hogar a leña, las vistas nevadas y el
+                        silencio absoluto... No se puede pedir más."</p>
+                    <span class="author">— Gonzalo Pereyra</span>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                    </div>
+                    <p class="quote">"Celebramos nuestro aniversario en la Suite Parejas. Decoración impecable, jacuzzi
+                        con vista a la montaña. Un sueño hecho realidad."</p>
+                    <span class="author">— Lucia & Martín</span>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                        <span class="material-symbols-outlined filled">star</span>
+                    </div>
+                    <p class="quote">"Llevamos a los chicos y la pasaron increíble. La piscina, los senderos y el
+                        desayuno casero fueron lo mejor. ¡10 de 10!"</p>
+                    <span class="author">— Familia Rodríguez</span>
                 </div>
             </div>
+            <div class="slider-controls">
+                <button class="slider-btn" id="prev-btn" aria-label="Testimonio anterior"><span
+                        class="material-symbols-outlined">chevron_left</span></button>
+                <div class="slider-dots" id="slider-dots"></div>
+                <button class="slider-btn" id="next-btn" aria-label="Testimonio siguiente"><span
+                        class="material-symbols-outlined">chevron_right</span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section section-padding">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">Preguntas Frecuentes</span>
+                <h2>Todo lo que necesitas saber</h2>
+            </div>
+            <div class="faq-grid fade-in-up">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cuál es el horario de check-in y check-out?</span>
+                        <span class="material-symbols-outlined faq-icon">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El check-in es a partir de las <strong>14:00 hs</strong> y el check-out es hasta las
+                            <strong>10:00 hs</strong>. Si necesitas flexibilidad, consultanos y lo vemos según
+                            disponibilidad.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Se permiten mascotas?</span>
+                        <span class="material-symbols-outlined faq-icon">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>¡Sí! Aceptamos mascotas en la Cabaña Alpina y la Cabaña Premium. Te pedimos que nos avises al
+                            momento de reservar para preparar todo.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cuál es la política de cancelación?</span>
+                        <span class="material-symbols-outlined faq-icon">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Cancelación gratuita hasta <strong>7 días antes</strong> de la fecha de ingreso.
+                            Cancelaciones posteriores tienen un cargo del 50% de la primera noche.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Hay estadía mínima?</span>
+                        <span class="material-symbols-outlined faq-icon">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La estadía mínima es de <strong>2 noches</strong>. En temporada alta (vacaciones de invierno,
+                            fines de semana largos) el mínimo puede ser de 3 noches.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué incluye el precio por noche?</span>
+                        <span class="material-symbols-outlined faq-icon">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Incluye alojamiento completo, ropa de cama y toallas, Wi-Fi, estacionamiento, acceso a
+                            piscina, leña para la estufa y desayuno regional artesanal.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cómo llego a las cabañas?</span>
+                        <span class="material-symbols-outlined faq-icon">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Estamos sobre la <strong>Ruta 82 en Potrerillos</strong>, a 70 km de la ciudad de Mendoza
+                            (aprox. 1 hora en auto). Te enviamos la ubicación exacta al confirmar tu reserva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="mapa" class="map-section">
+        <div class="map-content-overlay">
+            <div class="container">
+                <div class="map-info fade-in-up">
+                    <span class="section-subtitle">Ubicación</span>
+                    <h2>Cómo llegar</h2>
+                    <p>Ruta 82, Potrerillos, Mendoza, Argentina.<br>A solo 1 hora de la ciudad de Mendoza.</p>
+                    <a href="https://maps.google.com/?q=Potrerillos+Mendoza+Argentina" target="_blank"
+                        rel="noopener noreferrer" class="btn-primary">
+                        <span class="material-symbols-outlined"
+                            style="vertical-align: middle; margin-right: 5px;">directions</span>
+                        Abrir en Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26721.11086858387!2d-69.2068!3d-32.9508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0c7c3d9f0c5d%3A0x8f6b71c4e2a7b3d1!2sPotrerillos%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1709000000000!5m2!1ses-419!2sar"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Refugio Cabañas en Potrerillos">
+            </iframe>
         </div>
     </section>
 
@@ -212,17 +446,24 @@
                 <h3>Refugio Cabañas</h3>
                 <p>Tu escape perfecto en la montaña. Donde la naturaleza y el confort se abrazan.</p>
                 <div class="social-links">
-                    <a href="#"><span class="material-symbols-outlined">photo_camera</span></a>
-                    <a href="#"><span class="material-symbols-outlined">share</span></a>
+                    <a href="https://instagram.com/refugiocabanas" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <span class="material-symbols-outlined">photo_camera</span>
+                    </a>
+                    <a href="https://facebook.com/refugiocabanas" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook">
+                        <span class="material-symbols-outlined">share</span>
+                    </a>
                 </div>
             </div>
             <div class="footer-links">
-                <h4>Enlaces Rapidos</h4>
+                <h4>Enlaces Rápidos</h4>
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#cabanas">Alojamientos</a></li>
                     <li><a href="#comodidades">Servicios</a></li>
-                    <li><a href="#">Terminos y Condiciones</a></li>
+                    <li><a href="#actividades">Actividades</a></li>
+                    <li><a href="#faq">Preguntas Frecuentes</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
@@ -233,11 +474,35 @@
                     <li><span class="material-symbols-outlined">mail</span> info@refugiocabanas.com</li>
                 </ul>
             </div>
+            <div class="footer-newsletter">
+                <h4>Ofertas Exclusivas</h4>
+                <p>Suscribite y recibí nuestras promos de temporada.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Tu email" required aria-label="Email para newsletter">
+                    <button type="submit"><span class="material-symbols-outlined">send</span></button>
+                </form>
+            </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Refugio Cabañas. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5492613433108?text=¡Hola!%20Me%20gustaría%20consultar%20sobre%20disponibilidad%20de%20cabañas.%20🏔️"
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat por WhatsApp"
+        id="whatsapp-btn">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+            </path>
+        </svg>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        <span class="material-symbols-outlined">keyboard_arrow_up</span>
+    </button>
 
     <script src="script.js"></script>
 </body>
